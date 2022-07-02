@@ -29,7 +29,7 @@ import (
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/sleep_manage" // 统计睡眠时间
 
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/atri" // ATRI词库
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/atri" // ATRI词库
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/manager" // 群管
 
@@ -56,7 +56,7 @@ import (
 	//                               vvvv                               //
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ai_false"       // 服务器监控
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aiwife"         // 随机老婆
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aiwife"         // 随机老婆
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/b14"            // base16384加解密
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baidu"          // 百度一下
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/bilibili"       // 查询b站用户信息
@@ -65,7 +65,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/cangtoushi"     // 藏头诗
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/choose"         // 选择困难症帮手
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/chouxianghua"   // 说抽象话
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/coser"          // 三次元小姐姐
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/coser"          // 三次元小姐姐
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/cpstory"        // cp短打
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/danbooru"       // DeepDanbooru二次元图标签识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/diana"          // 嘉心糖发病
@@ -90,17 +90,17 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/moyu"           // 摸鱼
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/moyu_calendar"  // 摸鱼人日历
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/music"          // 点歌
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/nativesetu"     // 本地涩图
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/nativesetu"     // 本地涩图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/nativewife"     // 本地老婆
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/nbnhhsh"        // 拼音首字母缩写释义工具
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/novel"          // 铅笔小说网搜索
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/nsfw"           // nsfw图片识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/omikuji"        // 浅草寺求签
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/qqwife"         // 一群一天一夫一妻制群老婆
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/reborn"         // 投胎
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/qqwife"         // 一群一天一夫一妻制群老婆
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/reborn"         // 投胎
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/runcode"        // 在线运行代码
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/saucenao"       // 以图搜图
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/scale"          // 叔叔的AI二次元图片放大
+	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/scale"          // 叔叔的AI二次元图片放大
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/score"          // 分数
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/setutime"       // 来份涩图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/shadiao"        // 沙雕app
@@ -171,7 +171,7 @@ func init() {
 	// 直接写死 URL 时，请更改下面第二个参数
 	url := flag.String("u", "ws://127.0.0.1:6700", "Set Url of WSClient.")
 	// 默认昵称
-	adana := flag.String("n", "椛椛", "Set default nickname.")
+	adana ：= 标志。字符串（"n","s","斯卡蒂")
 	prefix := flag.String("p", "/", "Set command prefix.")
 	runcfg := flag.String("c", "", "Run from config file.")
 	save := flag.String("s", "", "Save default config to file and exit.")
@@ -201,7 +201,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	// sus = append(sus, 12345678)
+	 sus = append(sus, 2971533238)
 	// sus = append(sus, 87654321)
 
 	if *runcfg != "" {
@@ -225,7 +225,7 @@ func init() {
 
 	config.W = []*driver.WSClient{driver.NewWebSocketClient(*url, *token)}
 	config.Z = zero.Config{
-		NickName:      append([]string{*adana}, "ATRI", "atri", "亚托莉", "アトリ"),
+		NickName:      append([]string{*adana}, "斯卡蒂"),
 		CommandPrefix: *prefix,
 		SuperUsers:    sus,
 		Driver:        []zero.Driver{config.W[0]},
