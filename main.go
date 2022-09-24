@@ -57,6 +57,7 @@ import (
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ai_false" // 服务器监控
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aiwife"   // 随机老婆
+
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/b14"            // base16384加解密
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/baidu"          // 百度一下
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/bilibili"       // 查询b站用户信息
@@ -72,6 +73,7 @@ import (
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/diana"         // 嘉心糖发病
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/drift_bottle" // 漂流瓶
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/emojimix"     // 合成emoji
+
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/epidemic"      // 城市疫情查询
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/font"          // 渲染任意文字到图片
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/fortune" // 运势
@@ -99,6 +101,7 @@ import (
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/nsfw"       // nsfw图片识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/omikuji" // 浅草寺求签
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/qqwife"  // 一群一天一夫一妻制群老婆
+
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/reborn"         // 投胎
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/runcode"  // 在线运行代码
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/saucenao" // 以图搜图
